@@ -31,7 +31,7 @@ To run the React frontend:
 
 1. Navigate to the `r3-metrics` directory:
    ```bash
-   cd r3-metrics
+   cd r3-metrics-client
    ```
 2. Install the dependencies:
    ```bash
