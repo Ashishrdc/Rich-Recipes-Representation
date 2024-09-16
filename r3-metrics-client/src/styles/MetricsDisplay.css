@@ -37,24 +37,23 @@
 
 .custom-tooltip {
   position: absolute;
-  top: -40px;
-  left: 0;
   background-color: #333;
   color: #fff;
   padding: 5px;
   font-size: 12px;
   font-weight: 600;
   border-radius: 5px;
-  white-space: nowrap;
   display: none;
+  overflow-wrap: break-word;
+  white-space: normal;
+  z-index: 10;
 }
 
 .metric-box:hover .custom-tooltip {
   display: block;
-}
-
-.metric-box:hover .custom-tooltip {
-  top: -40px;
+  left: 0;
+  top: -10px;
+  transform: translate(0, -100%);
 }
 
 .metric-box p {

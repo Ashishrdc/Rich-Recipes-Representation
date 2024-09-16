@@ -54,11 +54,14 @@
 .ingredients-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
   gap: 20px;
 }
 
 .ingredient-item {
   display: flex;
+  min-width: fit-content;
+  overflow-wrap: anywhere;
   gap: 10px;
   align-items: flex-start;
   background-color: antiquewhite;

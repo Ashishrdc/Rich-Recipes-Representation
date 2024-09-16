@@ -3,10 +3,9 @@
 /* Container for the entire recipe list page */
 .recipe-list-container {
   padding: 20px;
-  margin: 0 auto;
-  max-width: 1200px;
+  width: 100%;
   background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .recipe-section {
@@ -23,7 +22,11 @@
 
 /* Styling for the search section */
 .search-section {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   margin-bottom: 30px;
 }
 

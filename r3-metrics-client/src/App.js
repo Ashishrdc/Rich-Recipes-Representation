@@ -15,20 +15,22 @@ import "./styles/LoadingSpinner.css";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Navigate to={"/recipes"} />} />
-        <Route
-          exact
-          path="/recipes"
-          element={<RecipeList recipes={recipesData["recipe-ids"]} />}
-        />
-        <Route
-          path="/recipes/:recipeName"
-          element={<RecipeDetail recipes={recipesData["recipe-ids"]} />}
-        />
-      </Routes>
-    </Router>
+    <div className="main">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate to={"/recipes"} />} />
+          <Route
+            exact
+            path="/recipes"
+            element={<RecipeList recipes={recipesData["recipe-ids"]} />}
+          />
+          <Route
+            path="/recipes/:recipeName"
+            element={<RecipeDetail recipes={recipesData["recipe-ids"]} />}
+          />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 
